@@ -1,1 +1,46 @@
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Declaring some color vars*/
+:root {
+  --primary-color: #08d9d6;
+  --secondary-color: #ff2e63;
+  --hover-color: #f7134c;
+  --ternary-color: #252a34;
+  --fourth-color: #eaeaea;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/*Estilos generales del contenedor*/
+.icon-navbar {
+  width: 100%; /*ocupar el ancho de la pantalla*/
+  background-color: var(--secondary-color);
+  overflow: auto; /*necesario para mostrar el color */
+}
+
+.icon-navbar__link {
+  float: left; /*recorrer todos los elementos a la izquierda */
+  text-align: center;
+  width: 20%; /*5 iconos = 20%*/
+  padding: 1em 0; /* padding top y bot */
+  transition: all 0.5s ease; /*una transition al efecto hover*/
+  font-size: 1.5em;
+}
+
+.icon-navbar__link i {
+  color: var(--fourth-color);
+}
+
+.icon-navbar__link:hover {
+  background-color: var(--hover-color);
+}
+
+.active {
+  background-color: var(--ternary-color);
+}
