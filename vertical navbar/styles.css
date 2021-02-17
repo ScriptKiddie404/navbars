@@ -1,10 +1,9 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/*Declaring some color vars*/
 :root {
   --primary-color: #08d9d6;
   --secondary-color: #ff2e63;
@@ -13,28 +12,27 @@
   --fourth-color: #eaeaea;
 }
 
+/*Remove user agent styles*/
 a:visited {
   color: inherit;
 }
 
-/*Estilos generales del contenedor*/
 .icon-navbar {
-  width: 100%; /*ocupar el ancho de la pantalla*/
+  /*El ancho de esta barra no puede ser el 100%, se debe definir*/
+  width: 5em;
   background-color: var(--secondary-color);
-  overflow: auto; /*necesario para mostrar el color */
 }
 
 .icon-navbar__link {
-  float: left; /*recorrer todos los elementos a la izquierda */
+  display: block;
   text-align: center;
-  width: 20%; /*5 iconos = 20%*/
-  padding: 1em 0; /* padding top y bot */
-  transition: all 0.3s ease; /*una transition al efecto hover*/
-  font-size: 1.5em;
+  padding: 1.5em;
 }
 
 .icon-navbar__link i {
   color: var(--fourth-color);
+  font-size: 2em;
+  transition: all 0.3s ease;
 }
 
 .icon-navbar__link:hover {
